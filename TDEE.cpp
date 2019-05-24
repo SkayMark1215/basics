@@ -44,7 +44,7 @@ int main() {
         cout << "Invalid gender." << endl;
         break;
     }
-    cout << "Thank you for using. Bye!"
+    cout << "Thank you for using. Bye!" << endl;
 
     system("pause");
     return 0;
