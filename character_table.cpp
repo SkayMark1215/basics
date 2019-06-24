@@ -15,16 +15,14 @@ int main() {
     {
         letter = i;
         cout << letter << '\t' << i << endl;
-        
     }
     cout << "--------Digits--------" << endl;
     for(int i = 49; i < 58; i++)
     {
         letter = i;
         cout << letter << '\t' << i << endl;
-        
     }
-    cin >> letter;  //screen freezing
 
+    system("pause");
     return 0; 
 }
