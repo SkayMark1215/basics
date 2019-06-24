@@ -7,19 +7,19 @@ int main() {
     cin >> s1 >> s2 >> s3;
     //calculating
     string fplace, splace, tplace;
-    if (s1 >= s2 && s1 >= s3) {
+    if (s1 >= s2 && s1 >= s3) {     //if s1 is largest
         tplace = s1;
         if (s2 >= s3) {
-        splace = s2;
-        fplace = s3;
+            splace = s2;
+            fplace = s3;
         }
         else {
-        splace = s3;
-        fplace = s2;    
+            splace = s3;
+            fplace = s2;    
         }
     }
     else {
-        if (s2 >= s1 and s2 >= s3) {
+        if (s2 >= s1 and s2 >= s3) {    //if s2 is largest
             tplace = s2;
             if (s1 >= s3) {
                 splace = s1;
@@ -28,8 +28,7 @@ int main() {
             else {
                 splace = s3;
                 fplace = s1;
-            }
-            
+            } 
         }
         else {
             tplace = s3;
@@ -42,7 +41,6 @@ int main() {
                 fplace = s2;
             }
         }
-        
     }
     cout << fplace << ", " << splace << ", " << tplace;
     
