@@ -2,48 +2,40 @@
 using namespace std;
 
 int main() {
-    constexpr double yen = 111.7;
-    constexpr double eur = 0.89;
-    constexpr double pound = 0.77;
-    cout << "Please, enter a lenght followed by a unit (yen, euro, pound) separated by space." << endl
+    constexpr double yen {111.7};
+    constexpr double eur {0.89};
+    constexpr double pound {0.77};
+    cout << "Please, enter length followed by a unit (yen, euro, pound) separated by space." << endl
          << "For example: 5 yen" << endl;
-    double length = 1;
+    double length {1};
     string unit {"???"};
     cin >> length >> unit;
-    if (unit == "yen"  or unit == "Yen") {
+    if (unit == "yen" || unit == "Yen")
         cout << "In " << length << " yen " << length / yen << " dollars." << endl;
-    }
     else
     {
-        if ((unit == "euros" and length == 1) or (unit == "Euros" and length == 1) or (unit == "euro" and length == 1) or (unit == "euros" and length == 1)) {
+        if ((unit == "euros" && length == 1) || (unit == "Euros" && length == 1) || (unit == "euro" && length == 1) || (unit == "euros" && length == 1))
                 cout << "In " << length << " euro " << length / eur << " dollars." << endl;
-        }
         else 
         {    
-            if (unit == "euros" or unit == "Euros" or unit == "euro" or unit == "euros") {
-            cout << "In " << length << " euros " << length / eur << " dollars." << endl;
-            }
+            if (unit == "euros" || unit == "Euros" || unit == "euro" || unit == "euros")
+                cout << "In " << length << " euros " << length / eur << " dollars." << endl;
             else
             {
-                if ((unit == "pounds" and length == 1) or (unit == "Pounds" and length == 1) or (unit == "pound" and length == 1) or (unit == "pounds" and length == 1)) {
+                if ((unit == "pounds" && length == 1) || (unit == "Pounds" && length == 1) || (unit == "pound" && length == 1) || (unit == "pounds" && length == 1))
                         cout << "In " << length << " pound " << length / pound << " dollars." << endl;
-                }
                 else
                 {
-                    if (unit == "pounds" or unit == "Pounds" or unit == "pound" or unit == "pounds") {
-                    cout << "In " << length << " pounds " << length / pound << " dollars." << endl;
-                    }
-                
+                    if (unit == "pounds" || unit == "Pounds" || unit == "pound" || unit == "pounds")
+                        cout << "In " << length << " pounds " << length / pound << " dollars." << endl;
                     else
-                    {
-                    cout << "Sorry, but this currency is not supported";
-                    }
+                        cout << "Sorry, but this currency is not supported";
                 }
             }
         }
     }            
-    cin >> length;  //screen freezing
-
+   
+    system("pause");
     return 0;
 }
 
