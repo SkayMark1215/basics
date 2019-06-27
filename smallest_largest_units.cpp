@@ -1,7 +1,7 @@
 /*
 *
 *
-*Structured programming demonstration
+*   Structured programming demonstration
 *
 *
 */
@@ -51,9 +51,7 @@ int main()
             }
     }
     else
-    {
         cout << "Please check the input conditions." << endl;
-    }
     cin >> integer >> unit; //definition of a smallest number >> cycle that reveals the smallest (necessary to find smallest)
     for (int i = 0; i == 0;)
     {
@@ -127,9 +125,7 @@ int main()
             }
         }
         else
-        {
             cout << "Please check the input conditions." << endl;
-        }
         cin >> integer >> unit;
     }
     if ((unit == "cm" or unit == "in" or unit == "ft" or unit == "m") and integer > 0)
@@ -194,9 +190,7 @@ int main()
         }
     }
     else
-    {
         cout << "Please check the input conditions." << endl;
-    }
     while (cin)
     {
         cin >> integer >> unit;
@@ -262,9 +256,7 @@ int main()
             }
         }
         else
-        {
             cout << "Please check the input conitions." << endl;
-        }
     }
 
     system("pause");
