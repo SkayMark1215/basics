@@ -2,23 +2,18 @@
 using namespace std;
 
 int main() {
+    double pennie, nickel, dime, quarter, Hdollar, dollar;
     cout << "Please, enter the number of pennies: ";
-    double pennie;
     cin >> pennie;
     cout << "Please, enter the number of nickels: ";
-    double nickel;
     cin >> nickel;
     cout << "Please, enter the number of dimes: ";
-    double dime;
     cin >> dime;
     cout << "Please, enter the number of quarters: ";
-    double quarter;
     cin >> quarter;
     cout << "Please, enter the number of half dollars: ";
-    double Hdollar;
     cin >> Hdollar;
     cout << "Please, enter the number of dollars: ";
-    double dollar;
     cin >> dollar;
     double sum;
     sum = dollar * 100 + Hdollar * 50 + quarter * 25 + dime * 10 + nickel * 5 + pennie;
