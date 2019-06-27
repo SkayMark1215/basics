@@ -14,8 +14,8 @@ int main() {
          << "r - rubles" << endl
          << "c - yuan" << endl               //using 'c' (CNY) to prevent errors in swith-statement (similarly cases)
          << "For example: 184 p" << endl;
-    double length {1};
-    char unit {'?'};
+    double length;
+    char unit;
     cin >> length >> unit;
     switch (unit)
     {
