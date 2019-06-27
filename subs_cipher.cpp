@@ -26,6 +26,6 @@ int main() {
     }    
     cout << "\nHave a nice day!" << endl;
 
-system("pause");
-return 0;
+    system("pause");
+    return 0;
 }
