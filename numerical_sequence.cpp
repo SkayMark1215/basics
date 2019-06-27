@@ -3,12 +3,12 @@ using namespace std;
 
 int main() {
     cout << "Please, enter three integer numbers: ";
-    int num1 {0};
-    int num2 {0};
-    int num3 {0};
-    int fplace {0};
-    int splace {0};
-    int tplace {0};
+    int num1;
+    int num2;
+    int num3;
+    int fplace;
+    int splace;
+    int tplace;
     cin >> num1 >> num2 >> num3;
     if (num1 >= num2 and num1 >= num3)
     {
@@ -53,7 +53,7 @@ int main() {
         }
     }    
     cout << fplace << ", " << splace << ", " << tplace;   
-    cin >> num1;    //screen freezing
-
+  
+    systme("pause");
     return 0;
 }
