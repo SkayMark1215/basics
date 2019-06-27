@@ -16,9 +16,7 @@ int main() {
     for (int i = 0; i < string_len; i++)     //amount of the string loop
     {
         for (int j = 0; spaces > j; j++)    //whitespaces loop
-        {
             cout << " ";
-        }
         spaces--;
 
         chars++;
@@ -31,13 +29,10 @@ int main() {
         }
         chars_rev = 0;
         for (int p = i; p >= 0; p--)
-        {
             chars_rev++;
-        }
         amount_of_chars_rev++;
 
-        cout << endl;   //new string
-        
+        cout << endl;   //new string 
     }
     
     system("pause");
