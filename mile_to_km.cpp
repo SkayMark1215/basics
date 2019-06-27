@@ -8,7 +8,7 @@ int main () {
     cin >> mile;
     kilometer = mile * 1.609;
     cout << "In " << mile << " mile(-s)" << " there are " << kilometer << " kilometer(-s)"; 
-    cin >> mile;    //screen freezing
-
+   
+    system("pause");
     return 0;
 }
