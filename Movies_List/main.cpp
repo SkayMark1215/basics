@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Movies.h"
 
+/*  OOP and separating files */
+
 int main() {
     cout << "Hi!" << endl
          << "This program create a list with your watched films that you can modify" << endl;
