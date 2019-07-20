@@ -47,11 +47,11 @@ int binary_search(int &l_bound, int &r_bound, string user_answer) {
     return middle;
 }
 
-string std_answer(string user_answer) {
-    for (auto &letter : user_answer)
+string lower_case(string word) {
+    for (auto &letter : word)
         letter = tolower(letter);
         
-    return user_answer;
+    return word;
 }
 
 int main() {
@@ -83,12 +83,12 @@ int main() {
     {
         cout << "Your number is " << binary_search(l_bound, r_bound, user_answer) << "?" << endl;
         cin >> user_answer;
-        user_answer = std_answer(user_answer);
+        user_answer = lower_case(user_answer);
         if (user_answer != "yes")
         {
             cout << "More or less?" << endl;
             cin >> user_answer;
-            user_answer = std_answer(user_answer);
+            user_answer = lower_case(user_answer);
         }
     }
     
